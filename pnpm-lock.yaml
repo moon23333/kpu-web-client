@@ -38,12 +38,18 @@ importers:
       '@visactor/vchart':
         specifier: ^1.11.10
         version: 1.11.10
+      '@vueuse/components':
+        specifier: ^11.0.0
+        version: 11.0.0(vue@3.4.35(typescript@5.5.4))
       '@vueuse/core':
         specifier: ^10.11.0
         version: 10.11.0(vue@3.4.35(typescript@5.5.4))
       '@vueuse/integrations':
         specifier: ^10.11.0
         version: 10.11.0(async-validator@4.2.5)(axios@1.7.3)(change-case@4.1.2)(nprogress@0.2.0)(qrcode@1.5.3)(sortablejs@1.15.2)(vue@3.4.35(typescript@5.5.4))
+      '@vxe-ui/plugin-render-element':
+        specifier: ^4.0.5
+        version: 4.0.5
       add:
         specifier: ^2.0.6
         version: 2.0.6
@@ -192,11 +198,8 @@ importers:
         specifier: ^1.1.2
         version: 1.1.2(vue@3.4.35(typescript@5.5.4))
       vxe-table:
-        specifier: ^4.7.16
-        version: 4.7.31
-      vxe-table-plugin-element:
-        specifier: ^4.0.0
-        version: 4.0.4(vxe-table@4.7.31)
+        specifier: ^4.7.61
+        version: 4.7.61
       xe-utils:
         specifier: ^3.5.28
         version: 3.5.28
@@ -2612,8 +2615,14 @@ packages:
   '@vue/shared@3.4.35':
     resolution: {integrity: sha512-hvuhBYYDe+b1G8KHxsQ0diDqDMA8D9laxWZhNAjE83VZb5UDaXl9Xnz7cGdDSyiHM90qqI/CyGMcpBpiDy6VVQ==}
 
+  '@vueuse/components@11.0.0':
+    resolution: {integrity: sha512-z/0GI23j2NrmamhHmJKN9QMoMQIStxFKvyvEGsvCQEobEAdAJCO7B8ixw388k3Idf36dpvqXpawA5ELWT+r6GA==}
+
   '@vueuse/core@10.11.0':
     resolution: {integrity: sha512-x3sD4Mkm7PJ+pcq3HX8PLPBadXCAlSDR/waK87dz0gQE+qJnaaFhc/dZVfJz+IUYzTMVGum2QlR7ImiJQN4s6g==}
+
+  '@vueuse/core@11.0.0':
+    resolution: {integrity: sha512-shibzNGjmRjZucEm97B8V0NO5J3vPHMCE/mltxQ3vHezbDoFQBMtK11XsfwfPionxSbo+buqPmsCljtYuXIBpw==}
 
   '@vueuse/core@9.13.0':
     resolution: {integrity: sha512-pujnclbeHWxxPRqXWmdkKV5OX4Wk4YeK7wusHqRwU0Q7EFusHoqNA/aPhB6KCh9hEqJkLAJo7bb0Lh9b+OIVzw==}
@@ -2662,17 +2671,26 @@ packages:
   '@vueuse/metadata@10.11.0':
     resolution: {integrity: sha512-kQX7l6l8dVWNqlqyN3ePW3KmjCQO3ZMgXuBMddIu83CmucrsBfXlH+JoviYyRBws/yLTQO8g3Pbw+bdIoVm4oQ==}
 
+  '@vueuse/metadata@11.0.0':
+    resolution: {integrity: sha512-0TKsAVT0iUOAPWyc9N79xWYfovJVPATiOPVKByG6jmAYdDiwvMVm9xXJ5hp4I8nZDxpCcYlLq/Rg9w1Z/jrGcg==}
+
   '@vueuse/metadata@9.13.0':
     resolution: {integrity: sha512-gdU7TKNAUVlXXLbaF+ZCfte8BjRJQWPCa2J55+7/h+yDtzw3vOoGQDRXzI6pyKyo6bXFT5/QoPE4hAknExjRLQ==}
 
   '@vueuse/shared@10.11.0':
     resolution: {integrity: sha512-fyNoIXEq3PfX1L3NkNhtVQUSRtqYwJtJg+Bp9rIzculIZWHTkKSysujrOk2J+NrRulLTQH9+3gGSfYLWSEWU1A==}
 
+  '@vueuse/shared@11.0.0':
+    resolution: {integrity: sha512-i4ZmOrIEjSsL94uAEt3hz88UCz93fMyP/fba9S+vypX90fKg3uYX9cThqvWc9aXxuTzR0UGhOKOTQd//Goh1nQ==}
+
   '@vueuse/shared@9.13.0':
     resolution: {integrity: sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==}
 
-  '@vxe-ui/core@1.0.8':
-    resolution: {integrity: sha512-UpRYX3h6tHDVC06ppN0I9Disjwts5j6FPWzufpqBsn7U/doEb64ObRZ64tzkUgFjbT3uDtJS5yRkONqQHq2Ayw==}
+  '@vxe-ui/core@4.0.1':
+    resolution: {integrity: sha512-h4LsYw+6ApUHCH2AsAN/CJNG6aEzEGMHWsRhb3tWONlFl5VdCfGJIes/aqcOD57NTifP4KfTJvPBHfu87URksQ==}
+
+  '@vxe-ui/plugin-render-element@4.0.5':
+    resolution: {integrity: sha512-YRdK3TSAQYfHKdYLyLyj18Pijoj85yxNcOLtbHJqq1gO8Hbnja/LysXVDGYZKM/iTgNrZmx9uf5ehT8R0EgXRA==}
 
   abort-controller@3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
@@ -7328,6 +7346,17 @@ packages:
     peerDependencies:
       vue: ^2.7 || ^3.0.0
 
+  vue-demi@0.14.10:
+    resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
+    engines: {node: '>=12'}
+    hasBin: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+
   vue-demi@0.14.8:
     resolution: {integrity: sha512-Uuqnk9YE9SsWeReYqK2alDI5YzciATE0r2SkA6iMAtuXvNTMNACJLJEXNXaEy94ECuBe4Sk6RzRU80kjdbIo1Q==}
     engines: {node: '>=12'}
@@ -7406,16 +7435,11 @@ packages:
       typescript:
         optional: true
 
-  vxe-pc-ui@4.0.28:
-    resolution: {integrity: sha512-iynMNhFfjCLLeJDYdtUg1FfKg+Z6nocq88rFQXI1qRTp4sH8Fy/gCCjk3MyXDhk26aZelgaegJMgkRsx0oniVg==}
+  vxe-pc-ui@4.0.90:
+    resolution: {integrity: sha512-1IB49zN/i3kmq55zZPx8b9wQpGcXOqJHZ+JnYMdjp6/dopwYCqaJkepeRyeLWkANnOMYegxvoLFnALXhtIA4Yg==}
 
-  vxe-table-plugin-element@4.0.4:
-    resolution: {integrity: sha512-TKhx4Bi45kdXRa9PyjdDtOjQuA9We+ASDdZez/d3DB7p2tFvBwVNnyvwYHT+kJntAeq0pOchmhsYhZeVADMAuw==}
-    peerDependencies:
-      vxe-table: ^4.5.0
-
-  vxe-table@4.7.31:
-    resolution: {integrity: sha512-WTxVTlM7tn3s5tjirL2TtY1Bpe58xKADm2pvacfKWd5vvhSABLxH+CRwRS/1B3leh0SJqjyjwcVI2KmAnay4Ew==}
+  vxe-table@4.7.61:
+    resolution: {integrity: sha512-o8JGFjcqaf6K84kJvU1iVKXTEcnEWRdz1YyagiNAdVwbG/wwsLg71bPnQYp36PrMI7RDMpEl9QmGZGuj2peR6w==}
 
   w3c-keyname@2.2.8:
     resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
@@ -7558,6 +7582,9 @@ packages:
 
   xe-utils@3.5.28:
     resolution: {integrity: sha512-oeLLJ0b54QdOSSgYQ9TiKW/xAGrc9r0weCA/5UfyGdm3n3js4cNOuuf9Tml7UwgBQpl4uWMbMwUZKLh2yqPF3A==}
+
+  xe-utils@3.5.29:
+    resolution: {integrity: sha512-9Ty3k/nHUptUzBZ/S+Z6umfpNWKU6ZFdGR2qHeynKRTjI/Tjd5ku/n6O1oKQCwtxQ3QzCl3NnD2LRy9SCTmnNw==}
 
   xml-name-validator@4.0.0:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
@@ -11220,12 +11247,31 @@ snapshots:
 
   '@vue/shared@3.4.35': {}
 
+  '@vueuse/components@11.0.0(vue@3.4.35(typescript@5.5.4))':
+    dependencies:
+      '@vueuse/core': 11.0.0(vue@3.4.35(typescript@5.5.4))
+      '@vueuse/shared': 11.0.0(vue@3.4.35(typescript@5.5.4))
+      vue-demi: 0.14.10(vue@3.4.35(typescript@5.5.4))
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+
   '@vueuse/core@10.11.0(vue@3.4.35(typescript@5.5.4))':
     dependencies:
       '@types/web-bluetooth': 0.0.20
       '@vueuse/metadata': 10.11.0
       '@vueuse/shared': 10.11.0(vue@3.4.35(typescript@5.5.4))
       vue-demi: 0.14.8(vue@3.4.35(typescript@5.5.4))
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+
+  '@vueuse/core@11.0.0(vue@3.4.35(typescript@5.5.4))':
+    dependencies:
+      '@types/web-bluetooth': 0.0.20
+      '@vueuse/metadata': 11.0.0
+      '@vueuse/shared': 11.0.0(vue@3.4.35(typescript@5.5.4))
+      vue-demi: 0.14.10(vue@3.4.35(typescript@5.5.4))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -11258,11 +11304,20 @@ snapshots:
 
   '@vueuse/metadata@10.11.0': {}
 
+  '@vueuse/metadata@11.0.0': {}
+
   '@vueuse/metadata@9.13.0': {}
 
   '@vueuse/shared@10.11.0(vue@3.4.35(typescript@5.5.4))':
     dependencies:
       vue-demi: 0.14.8(vue@3.4.35(typescript@5.5.4))
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+
+  '@vueuse/shared@11.0.0(vue@3.4.35(typescript@5.5.4))':
+    dependencies:
+      vue-demi: 0.14.10(vue@3.4.35(typescript@5.5.4))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -11274,10 +11329,12 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@vxe-ui/core@1.0.8':
+  '@vxe-ui/core@4.0.1':
     dependencies:
       dom-zindex: 1.0.4
-      xe-utils: 3.5.28
+      xe-utils: 3.5.29
+
+  '@vxe-ui/plugin-render-element@4.0.5': {}
 
   abort-controller@3.0.0:
     dependencies:
@@ -16692,6 +16749,10 @@ snapshots:
     dependencies:
       vue: 3.4.35(typescript@5.5.4)
 
+  vue-demi@0.14.10(vue@3.4.35(typescript@5.5.4)):
+    dependencies:
+      vue: 3.4.35(typescript@5.5.4)
+
   vue-demi@0.14.8(vue@3.4.35(typescript@5.5.4)):
     dependencies:
       vue: 3.4.35(typescript@5.5.4)
@@ -16778,17 +16839,13 @@ snapshots:
     optionalDependencies:
       typescript: 5.5.4
 
-  vxe-pc-ui@4.0.28:
+  vxe-pc-ui@4.0.90:
     dependencies:
-      '@vxe-ui/core': 1.0.8
+      '@vxe-ui/core': 4.0.1
 
-  vxe-table-plugin-element@4.0.4(vxe-table@4.7.31):
+  vxe-table@4.7.61:
     dependencies:
-      vxe-table: 4.7.31
-
-  vxe-table@4.7.31:
-    dependencies:
-      vxe-pc-ui: 4.0.28
+      vxe-pc-ui: 4.0.90
 
   w3c-keyname@2.2.8: {}
 
@@ -16999,6 +17056,8 @@ snapshots:
       signal-exit: 4.1.0
 
   xe-utils@3.5.28: {}
+
+  xe-utils@3.5.29: {}
 
   xml-name-validator@4.0.0: {}
 
