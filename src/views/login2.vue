@@ -8,7 +8,6 @@ import Copyright from '@/layouts/components/Copyright/index.vue'
 defineOptions({
   name: 'Login',
 })
-
 const { t } = useI18n()
 const logo = new URL('../assets/images/logo.png', import.meta.url).href
 const banner = new URL('../assets/images/login-banner.png', import.meta.url).href
