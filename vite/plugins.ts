@@ -40,7 +40,7 @@ export default function createVitePlugins(viteEnv, isBuild = false) {
     }),
 
     // https://github.com/vuejs/devtools-next
-    viteEnv.VITE_OPEN_DEVTOOLS === 'true' && VueDevTools({ launchEditor: 'webstorm' }),
+    viteEnv.VITE_OPEN_DEVTOOLS === 'true' && VueDevTools({ launchEditor: 'code' }),
 
     // https://github.com/unplugin/unplugin-auto-import
     autoImport({
